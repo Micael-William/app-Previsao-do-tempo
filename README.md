@@ -1,4 +1,3 @@
-# app-Previsao-do-tempo
 <h1>💻 Sobre o projeto</h1>
 
 🚀 Projeto realizado para verificar temperatura de determinada cidade ou país
