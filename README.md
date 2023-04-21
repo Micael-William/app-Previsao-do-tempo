@@ -10,9 +10,7 @@
 
 
 ## 🎨 Layout
-
-![print1-projeto](https://user-images.githubusercontent.com/90733510/232644659-42cc894c-beb5-45a6-a8ff-4dcfe69bd486.png)
-
+![projeto-novo2](https://user-images.githubusercontent.com/90733510/233675317-baa71fb4-8447-4b0c-9b7d-5e8794e1d768.png)
 
 ## 🛠 Tecnologias
 
