@@ -15,6 +15,11 @@ async function campoBuscaCidade () {
     
     const cidade = campoCidade.value
 
+    if (cidade === "") {
+        alert("Preencha o campo.")
+    }
+
+
     const chave = '9c7067bdfe6ec29dd648ff4e22584141'
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=${chave}&lang=pt_br`
     const busca = await fetch(url)
@@ -41,9 +46,10 @@ async function campoBuscaCidade () {
     umidadeTempo.innerText = umidade
     descricaoTemperatura.innerText = descricao_temperatura
 
-    if (cidade) {
-        campoCidade.value = ''
-    }
-
+    const verifica_campo = cidade ? campoCidade.value = '' : ''
+    return verifica_campo
+    
+    
     console.log(busca)
 }
+

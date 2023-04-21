@@ -61,6 +61,7 @@
     .container-campos {
         flex-direction: column;
         width: 70vw;
+        height: 60vh;
     }
 }
 
@@ -73,5 +74,6 @@
     .container-campos {
         flex-direction: column;
         width: 90vw;
+        height: 70vh;
     }
 }
