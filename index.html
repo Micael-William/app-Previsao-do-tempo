@@ -9,26 +9,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <main>
+    <main class="conteudo">
         <div class="container">
-            <form class="formulario" action="#" method="post">
-                <input class="campo-busca-cidade" type="text" name="busca_cidade" id="busca_cidade" placeholder="Temperatura de qual cidade?">
-                <button class="botao-busca-cidade" type="submit"><i class="fa-solid fa-magnifying-glass icone"></i>
-                </button>
-            </form>
+            <div class="container-campos">
+                <section class="secao-campos">
+                    <input class="campo-cidade" type="text" name="cidade" id="cidade" placeholder="Digite o nome da cidade, para ver o tempo">
+                    <button id="botao" class="botao-busca"><i class="fa-solid fa-magnifying-glass icone"></i></button>
+                </section>
 
-            
-            <section>
-                <span class="cidade"></span>
-                <span class="tempo"></span>
-                <span class="temperatura"></span>
-                <span class="umidade"></span>
+                <section class="secao-descricao">
+                    <img id="logo-temperatura" class="logo-tempo" src="/assets/img/01d.png" alt="logo-temperatura">
+                    <h1 id="temperatura" class="descricao-temperatura"> 32°c</h1>
+                    <h2 id="descricao-cidade" class="descricao-do-tempo-cidade">Cidade..</h2>
+                </section>
                 
-                <span class="descricao"></span>
-                <img class="img" src="" alt="previsao">
-            </section>
+                <section class="secao-tempo">
+                    <p id="temperatura-maxima" class="temperatura"> Temperatura máxima 37</p>
+                    <p id="temperatura-minima" class="temperatura"> Temperatura minima  50</p>
+                    <p id="umidade" class="temperatura"> Umidade - 39</p>
+                </section>
+                    <!-- <div class="campo-rodape">
+                        <span class="descricao-rodape"> Desenvolvido por micael - Tempo e Temperatura</span>
+                    </div> -->
+            </div>
         </div>
     </main>
     <script src="/assets/js/index.js"></script>
 </body>
-</html>
+</html> 

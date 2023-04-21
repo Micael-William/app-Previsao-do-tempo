@@ -1,0 +1,72 @@
+.secao-campos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 5px 0;
+    background-color: #ffff;
+    width: 20vw;
+    height: 6vh;
+}
+
+.campo-cidade {
+    outline: none;
+    border: 0;
+    height: 30px;
+    width: 70%;
+    border-bottom: 1px solid #000;
+}
+
+.campo-cidade::placeholder {
+    text-align: center;
+}
+
+.botao-busca {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #ffff;
+    border: 0;
+}
+
+.botao-busca:hover {
+    background-color: rgb(53, 159, 43);
+    border: 0;
+}
+
+@media (max-width: 720px) {
+    .secao-campos {
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+    .campo-cidade {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 485px) {
+    .secao-campos {
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+    .campo-cidade {
+        width: 80%;
+    }
+}
+
+@media (max-width: 370px) {
+    .secao-campos {
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+    .campo-cidade {
+        width: 60vw;
+    }
+}

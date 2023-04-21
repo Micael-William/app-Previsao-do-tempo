@@ -1,0 +1,15 @@
+.secao-tempo {
+    height: 24vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.temperatura {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px dashed #000;
+    padding: 10px;
+    font-weight: 600;
+}
