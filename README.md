@@ -26,7 +26,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autor
 
-<a href="http://www.instagram.com/wlliam_costa" target="_blank">
 <!--  <img style="border-radius: 50%;" src="" width="100px;" alt="Micael-William"/> -->
 <!--  <br /> -->
  <sub><b>Micael William</b></sub></a> <a href="https://bit.ly/Linkedin-Micael-William" title="perfil" target="_blank">🚀</a>
