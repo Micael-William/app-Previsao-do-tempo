@@ -22,7 +22,7 @@ async function campoBuscaCidade () {
 
     const chave = '9c7067bdfe6ec29dd648ff4e22584141'
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=${chave}&lang=pt_br`
-    const busca = await fetch(url)
+    const busca =  fetch(url)
     .then(resposta => resposta)
     .then(dados => dados.json())
     .finally(final => final)
