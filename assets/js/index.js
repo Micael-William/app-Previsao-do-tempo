@@ -7,11 +7,9 @@ const descricaoCidade = document.getElementById('descricao-cidade')
 const umidadeTempo = document.getElementById('umidade')
 const descricaoTemperatura = document.getElementById('temperatura')
 
-botao.addEventListener('click', campoBuscaCidade)
 
 
-
-async function campoBuscaCidade () {
+async function campodataCidade () {
     
     const cidade = campoCidade.value
 
@@ -22,19 +20,17 @@ async function campoBuscaCidade () {
 
     const chave = '9c7067bdfe6ec29dd648ff4e22584141'
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=${chave}&lang=pt_br`
-    const busca =  fetch(url)
-    .then(resposta => resposta)
-    .then(dados => dados.json())
-    .finally(final => final)
+    const busca =  await fetch(url)
+    const data = await busca.json()
 
     
-    const imagem_temperatura = `http://openweathermap.org/img/wn/${busca.weather[0].icon}.png`
-    const descricao_temperatura = `${busca.weather[0].description}`
-    const nome_da_cidade = busca.name
-    const temperatura_minima = ` Temperatura minima ${Math.floor(busca.main.temp_min)} °c`
-    const temperatura_maxima = ` Temperatura máxima ${Math.floor(busca.main.temp_max)} °c`
-    const umidade = ` Umidade ${busca.main.humidity} %`
-    const temperatura = `${busca.main.temp} °c`
+    const imagem_temperatura = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+    const descricao_temperatura = `${data.weather[0].description}`
+    const nome_da_cidade = data.name
+    const temperatura_minima = ` Temperatura minima ${Math.floor(data.main.temp_min)} °c`
+    const temperatura_maxima = ` Temperatura máxima ${Math.floor(data.main.temp_max)} °c`
+    const umidade = ` Umidade ${data.main.humidity} %`
+    const temperatura = `${data.main.temp} °c`
 
 
     
@@ -50,6 +46,8 @@ async function campoBuscaCidade () {
     return verifica_campo
     
     
-    console.log(busca)
+    console.log(data)
 }
 
+
+botao.addEventListener('click', campodataCidade)
