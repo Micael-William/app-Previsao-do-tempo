@@ -28,6 +28,7 @@
     cursor: pointer;
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffff;
 }
 
 @media (max-width: 1300px) {
