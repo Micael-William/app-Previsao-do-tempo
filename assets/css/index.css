@@ -7,15 +7,32 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    /* background-color: #83B4FF; */
+    background-image: url('/assets/logos/boglarka-salamon-jIuogBcM_AI-unsplash.jpg');
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
+
+.esconder-secao-tempo, .esconder-secao-descricao {
+    display:none;
+}
+
+h3 {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .conteudo {
     display: flex;
     border-radius: 15%;
+}
+
+.secao-cidade{
+    display: flex;
+    flex-direction: column;
 }
 
 .campo-rodape {

@@ -6,30 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
     <title>Previsão do Tempo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <main class="conteudo">
-        <div class="container">
-            <div class="container-campos">
-                <section class="secao-campos">
-                    <input class="campo-cidade" type="text" name="cidade" id="cidade" placeholder="Digite o nome da cidade, para ver o tempo">
-                    <button id="botao" class="botao-busca"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </section>
+    <main>  
+        <div class="container-campos">
+            <h3>Confira o clima de sua cidade:</h3>
 
-                <section class="secao-descricao">
-                    <img id="logo-temperatura" class="logo-tempo" src="/assets/img/01d.png" alt="logo-temperatura">
-                    <h1 id="temperatura" class="descricao-temperatura"> 32°c</h1>
-                    <h2 id="descricao-cidade" class="descricao-do-tempo-cidade">Cidade...</h2>
-                </section>
+            <form action="">
+                <i class="bi bi-geo-alt-fill localizacao"></i>
+                <input class="campo-cidade" type="text" name="cidade" id="cidade" placeholder="Buscar cidade">
+                <button id="botao" type="submit" class="botao-busca"><i class="bi bi-search"></i></button>                
+            </form>
+                      
+            
+            <section class="secao-descricao">
+                <div class="descricao-data"></div>
+                <img id="logo-temperatura" class="logo-tempo" src="/assets/img/01d.png" alt="logo-temperatura">
+                <p id="graus"></p>      
+                <h2 id="descricao-cidade" class="descricao-do-tempo-cidade"></h2>
                 
-                <section class="secao-tempo">
-                    <p id="temperatura-maxima" class="temperatura"> Temperatura máxima 37</p>
-                    <p id="temperatura-minima" class="temperatura"> Temperatura minima  50</p>
-                    <p id="umidade" class="temperatura"> Umidade - 39</p>
-                </section>
-            </div>
+                <h1 id="temperatura" class="descricao-temperatura"> 32°c</h1>
+                
+            </section>
+            
+            <section class="secao-tempo">
+
+                <span>temp max<p id="temperatura-maxima" class="temperatura">37</p></span> | <span>temp min<p id="temperatura-minima" class="temperatura">50</p></span>
+                <!-- <p id="umidade" class="temperatura"> Umidade - 39</p> -->
+            </section>
         </div>
     </main>
     <script src="/assets/js/index.js"></script>

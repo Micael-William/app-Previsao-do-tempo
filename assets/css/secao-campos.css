@@ -2,33 +2,48 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
     gap: 10px;
     padding: 5px 0;
-    background-color: #ffff;
-    width: 20vw;
-    height: 6vh;
+    width: 17vw;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+form > button {
+    background-color: transparent;
+    border: none;
+} 
+
+hr {
+    margin-top: 20px;
+    width: 17vw;
+}
+
+.localizacao {
+    padding: 10px;
 }
 
 .campo-cidade {
     outline: none;
     border: 0;
-    height: 30px;
-    width: 70%;
-    border-bottom: 1px solid #000;
-}
-
-.campo-cidade::placeholder {
-    text-align: center;
+    height: 35px;
+    padding: 10px;
+    background-color: transparent;  
+    width: 13vw;
 }
 
 .botao-busca {
     width: 49px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
     border: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffff;
+    padding: 10px;  
 }
 
 @media (max-width: 1300px) {
