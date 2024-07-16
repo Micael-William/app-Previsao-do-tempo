@@ -10,8 +10,9 @@
 
 
 ## 🎨 Layout
+![print-projeto-previsao-do-tempo](https://github.com/user-attachments/assets/cda204e6-d47e-4cb5-a214-7528ea00c7c5)
 
-![Captura de tela 2023-04-26 190514](https://user-images.githubusercontent.com/90733510/234713319-0e46f0dd-9fca-44b0-8cf9-456f78411563.png)
+<!--![Captura de tela 2023-04-26 190514](https://user-images.githubusercontent.com/90733510/234713319-0e46f0dd-9fca-44b0-8cf9-456f78411563.png)-->
 
 ## 🛠 Tecnologias
 
